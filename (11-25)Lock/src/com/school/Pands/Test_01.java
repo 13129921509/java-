@@ -1,4 +1,4 @@
-package com.school.lock;
+package com.school.Pands;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
