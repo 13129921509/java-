@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/beans" xmlns:context="http://www.springframework.org/schema/context" xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.2.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd ">    <context:property-placeholder location="classpath:db.properties"></context:property-placeholder>
+
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="jdbcUrl" value="${jdbc.jdbcUrl}" ></property>
+        <property name="driverClass" value="${jdbc.driverClass}" ></property>
+        <property name="user" value="${jdbc.user}" ></property>
+        <property name="password" value="${jdbc.password}" ></property>
+    </bean>
+    <!-- 2.将JDBCTemplate放入spring容器 -->
+    <bean name="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager" >
+        <property name="dataSource" ref="dataSource" ></property>
+    </bean>
+
+    <bean name="studentDao" class="com.school.dao.impl.StudentDaoImpl">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+    <bean name="studentService" class="com.school.Service.impl.StudentServiceImpl"></bean>
+    <!-- 使用代码模式可以采用下面的办法 -->
+    <!--<bean name="transactionTemplate" class="org.springframework.transaction.support.TransactionTemplate">-->
+        <!--<property name="transactionManager" ref="transactionManager"></property>-->
+    <!--</bean>-->
+    <!-- 第二种方式通过xml配置事务管理 -->
+    <!--<tx:advice id="txAdvice" transaction-manager="transactionManager">-->
+        <!--<tx:attributes>-->
+            <!--<tx:method name="add*" read-only="false" isolation="REPEATABLE_READ" propagation="REQUIRED"/>-->
+            <!--<tx:method name="del*" read-only="false" isolation="REPEATABLE_READ" propagation="REQUIRED"/>-->
+            <!--<tx:method name="transcation" read-only="false" isolation="REPEATABLE_READ" propagation="REQUIRED"/>-->
+        <!--</tx:attributes>-->
+    <!--</tx:advice>-->
+    <!--<aop:config>-->
+        <!--<aop:pointcut id="txpc" expression="execution(* com.school.Service.impl.*ServiceImpl.*(..))"></aop:pointcut>-->
+        <!--<aop:advisor advice-ref="txAdvice" pointcut-ref="txpc"></aop:advisor>-->
+    <!--</aop:config>-->
+    <!-- 开启使用注解管理aop事务 -->
+    <tx:annotation-driven/>
+</beans>
