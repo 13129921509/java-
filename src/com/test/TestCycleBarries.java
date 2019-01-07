@@ -40,5 +40,6 @@ public class TestCycleBarries {
         for(int i = 0 ; i < N; i++){
             executors.execute(new ThreadBusiness(cyclicBarrier));
         }
+        System.out.println("finish");
     }
 }
