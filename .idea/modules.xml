@@ -2,7 +2,37 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Java程序.iml" filepath="$PROJECT_DIR$/.idea/Java程序.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(10-15)ThreadLocalTest/(10-15)ThreadLocalTest.iml" filepath="$PROJECT_DIR$/(10-15)ThreadLocalTest/(10-15)ThreadLocalTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(11-19)proxy_mode/(11-19)proxy_mode.iml" filepath="$PROJECT_DIR$/(11-19)proxy_mode/(11-19)proxy_mode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(11-21)Serializable/(11-21)Serializable.iml" filepath="$PROJECT_DIR$/(11-21)Serializable/(11-21)Serializable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(11-21)hashset_01/(11-21)hashset_01.iml" filepath="$PROJECT_DIR$/(11-21)hashset_01/(11-21)hashset_01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(11-23)hashmap_01/(11-23)hashmap_01.iml" filepath="$PROJECT_DIR$/(11-23)hashmap_01/(11-23)hashmap_01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(11-24)ThreadPoolExecutor/(11-24)ThreadPoolExecutor.iml" filepath="$PROJECT_DIR$/(11-24)ThreadPoolExecutor/(11-24)ThreadPoolExecutor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(11-25)Lock/(11-25)Lock.iml" filepath="$PROJECT_DIR$/(11-25)Lock/(11-25)Lock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(11-25)SearchTree/(11-25)SearchTree.iml" filepath="$PROJECT_DIR$/(11-25)SearchTree/(11-25)SearchTree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(11-25)TwoWayLinksList/(11-25)TwoWayLinksList.iml" filepath="$PROJECT_DIR$/(11-25)TwoWayLinksList/(11-25)TwoWayLinksList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(11-26)IO/(11-26)IO.iml" filepath="$PROJECT_DIR$/(11-26)IO/(11-26)IO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(11-28)ABC_Thread/(11-28)ABC_Thread.iml" filepath="$PROJECT_DIR$/(11-28)ABC_Thread/(11-28)ABC_Thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(11-29)TicketingProblem/(11-29)TicketingProblem.iml" filepath="$PROJECT_DIR$/(11-29)TicketingProblem/(11-29)TicketingProblem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(12-3)spring/(12-3)spring.iml" filepath="$PROJECT_DIR$/(12-3)spring/(12-3)spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(12-6)MyAdapter/(12-6)MyAdapter.iml" filepath="$PROJECT_DIR$/(12-6)MyAdapter/(12-6)MyAdapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(12-8)ReentrantLockWriteanadRead/(12-8)ReentrantLockWriteanadRead.iml" filepath="$PROJECT_DIR$/(12-8)ReentrantLockWriteanadRead/(12-8)ReentrantLockWriteanadRead.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(2019_1_7)semaphore/(2019_1_7)semaphore.iml" filepath="$PROJECT_DIR$/(2019_1_7)semaphore/(2019_1_7)semaphore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(12-2)springboot3/src/main/main.iml" filepath="$PROJECT_DIR$/(12-2)springboot3/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(11_30)cglib/src/main/main1.iml" filepath="$PROJECT_DIR$/(11_30)cglib/src/main/main1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(12-2)myredis/src/main/main2.iml" filepath="$PROJECT_DIR$/(12-2)myredis/src/main/main2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(11-29)springbootweb/src/main/main3.iml" filepath="$PROJECT_DIR$/(11-29)springbootweb/src/main/main3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(12-7)springbootandmybatis/src/main/main4.iml" filepath="$PROJECT_DIR$/(12-7)springbootandmybatis/src/main/main4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(12-8)email/src/main/main5.iml" filepath="$PROJECT_DIR$/(12-8)email/src/main/main5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(12-8)springscheduling/src/main/main6.iml" filepath="$PROJECT_DIR$/(12-8)springscheduling/src/main/main6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(12-6)redis_cluster/src/main/main7.iml" filepath="$PROJECT_DIR$/(12-6)redis_cluster/src/main/main7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(12-9)aopandtransction/src/main/main8.iml" filepath="$PROJECT_DIR$/(12-9)aopandtransction/src/main/main8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(12-8)email/src/test/test.iml" filepath="$PROJECT_DIR$/(12-8)email/src/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(12-6)redis_cluster/src/test/test1.iml" filepath="$PROJECT_DIR$/(12-6)redis_cluster/src/test/test1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(12-8)springscheduling/src/test/test2.iml" filepath="$PROJECT_DIR$/(12-8)springscheduling/src/test/test2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(12-2)springboot3/src/test/test3.iml" filepath="$PROJECT_DIR$/(12-2)springboot3/src/test/test3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(12-7)springbootandmybatis/src/test/test4.iml" filepath="$PROJECT_DIR$/(12-7)springbootandmybatis/src/test/test4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/(11-29)springbootweb/src/test/test5.iml" filepath="$PROJECT_DIR$/(11-29)springbootweb/src/test/test5.iml" />
     </modules>
   </component>
 </project>
