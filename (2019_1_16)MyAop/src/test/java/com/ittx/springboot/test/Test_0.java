@@ -14,7 +14,7 @@ public class Test_0 {
     IUserDao userDao;
     @Test
     public void test_1(){
-        System.out.println(userDao.getClass());
+        //System.out.println(userDao.getClass());
         userDao.save();
     }
 }

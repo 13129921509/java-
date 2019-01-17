@@ -11,6 +11,6 @@ import org.springframework.context.annotation.Configuration;
 public class MyConfig {
     @Bean("user_proxy")
     public IUserDao getProxyInstance(){
-        return (IUserDao) ProxyFactory.getProxyInstance(new UserDao(),new MyAop());
+        return (IUserDao) ProxyFactory.getProxyInstance(new UserDao());
     }
 }
