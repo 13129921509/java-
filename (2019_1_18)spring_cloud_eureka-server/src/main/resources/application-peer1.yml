@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: eurake-server
+server:
+  port: 2222
+
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    serviceUrl:
+      defaultZone: http://peer2:2223/eureka/
+    register-with-eureka: true
+    fetch-registry: true

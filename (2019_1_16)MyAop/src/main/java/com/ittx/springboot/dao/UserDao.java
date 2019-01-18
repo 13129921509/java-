@@ -8,7 +8,7 @@ import com.ittx.springboot.inface.IUserDao;
 @Aspect
 public class UserDao implements IUserDao {
 
-    @Pointcut(value = "com.ittx.springboot.proxy.Show.show")
+    @Pointcut(value = "com.ittx.springboot.server.MyAop.commite")
     public void show(){}
 
     @Override

@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="190efb87-da6b-4ebc-b91b-c711ead6750d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../(2019_1_7)semaphore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../(2019_1_7)semaphore/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../(2019_1_7)semaphore/out/production/(2019_1_7)semaphore/com/test/Bank.class" beforeDir="false" afterPath="$PROJECT_DIR$/../(2019_1_7)semaphore/out/production/(2019_1_7)semaphore/com/test/Bank.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../(2019_1_7)semaphore/out/production/(2019_1_7)semaphore/com/test/SaveThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/../(2019_1_7)semaphore/out/production/(2019_1_7)semaphore/com/test/SaveThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../(2019_1_7)semaphore/out/production/(2019_1_7)semaphore/com/test/testsemaphore_1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../(2019_1_7)semaphore/out/production/(2019_1_7)semaphore/com/test/testsemaphore_1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../(2019_1_7)semaphore/src/com/test/testsemaphore_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../(2019_1_7)semaphore/src/com/test/testsemaphore_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../(2019_1_16)MyAop/src/main/java/com/ittx/springboot/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../(2019_1_16)MyAop/src/main/java/com/ittx/springboot/dao/UserDao.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,21 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ArrayBlockingQueue.java" pinned="false" current-in-tab="true">
-        <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/ArrayBlockingQueue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="354" column="19" selection-start-line="354" selection-start-column="19" selection-end-line="354" selection-end-column="19" />
-              <folding>
-                <element signature="e#6812#6813#0" expanded="true" />
-                <element signature="e#6849#6850#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -89,9 +71,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -103,12 +82,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../(2019_1_7)semaphore" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -199,6 +181,7 @@
       <workItem from="1547009130107" duration="2199000" />
       <workItem from="1547029701137" duration="990000" />
       <workItem from="1547030921535" duration="337000" />
+      <workItem from="1547710576438" duration="9000" />
     </task>
     <task id="LOCAL-00001" summary="BlockingQueue">
       <created>1547029857014</created>
@@ -218,7 +201,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5453000" />
+    <option name="totallyTimeSpent" value="5462000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -231,19 +214,19 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" weight="0.32952926" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32905984" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32952926" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32952926" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2600536" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26340482" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="7" />
@@ -290,6 +273,17 @@
     <option name="LAST_COMMIT_MESSAGE" value="BlockingQueue" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/ArrayBlockingQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8540">
+          <caret line="354" column="19" selection-start-line="354" selection-start-column="19" selection-end-line="354" selection-end-column="19" />
+          <folding>
+            <element signature="e#6812#6813#0" expanded="true" />
+            <element signature="e#6849#6850#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/ArrayBlockingQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10780">
