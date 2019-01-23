@@ -12,8 +12,8 @@ public class ConsumerController {
     @Autowired
     RestTemplate restTemplate;
 
-    @RequestMapping(value = "/rabbon-consumer",method = RequestMethod.GET)
+    @RequestMapping(value = "/ribbon-consumer",method = RequestMethod.GET)
     public String helloConsumer(){
-        return restTemplate.getForEntity("http://hello-service/index",String.class).getBody();
+        return restTemplate.getForObject("http://hello-service/index",String.class);
     }
 }
