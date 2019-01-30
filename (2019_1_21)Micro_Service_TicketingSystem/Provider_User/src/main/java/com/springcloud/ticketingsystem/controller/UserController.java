@@ -3,7 +3,7 @@ package com.springcloud.ticketingsystem.controller;
 
 import com.netflix.appinfo.InstanceInfo;
 import com.netflix.discovery.EurekaClient;
-import org.apache.catalina.User;
+import com.springcloud.ticketingsystem.entity.User;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -38,5 +38,11 @@ public class UserController{
     public String getUser(){
         ServiceInstance instance = client.getLocalServiceInstance();
         return "user:"+instance.getHost()+","+instance.getServiceId();
+    }
+
+    @RequestMapping(value = "/message",method = RequestMethod.GET)
+    public String getMessage(){
+        User user = new User("蔡子文","22");
+        return user.toString();
     }
 }
