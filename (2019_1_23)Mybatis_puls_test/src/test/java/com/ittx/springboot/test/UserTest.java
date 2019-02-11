@@ -1,6 +1,8 @@
 package com.ittx.springboot.test;
-
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.ittx.springboot.entity.User;
 import com.ittx.springboot.mapper.UserMapper;
 import org.junit.Test;
@@ -22,7 +24,12 @@ public class UserTest {
     @Test
     public void test_0(){
 //        userMapper.getAll(Wrappers.<User>lambdaQuery().eq(new QueryWrapper<User>()::e));
+        //select();
+//        updateBySetSql();
+//        getAllBySql();
+        userPage();
     }
+
     public void insert(User user){
         userMapper.insert(user);
     }
@@ -62,5 +69,37 @@ public class UserTest {
                     .and(i -> i.like("name","J%"))));
     }
 
+    public void select(){
+//        show();
+        QueryWrapper<User> wrapper = new QueryWrapper<User>();
+        wrapper.setEntity(user);
+        wrapper.select(i->i.getProperty().startsWith("sex") );
+    }
 
+    public void update(){
+        int update = userMapper.update(user, new UpdateWrapper<>(user).set("name", "cai").eq("name","Jone"));
+        show();
+    }
+
+    public void updateBySetSql(){
+        int update = userMapper.update(user, new UpdateWrapper<>(user).setSql("set name='k',age='22',email='111111@qq.com'").eq("name","Jone"));
+        show();
+    }
+
+    //自定义sql
+    public void getAllBySql(){
+        show();
+        LambdaQueryWrapper<User> wrapper = new LambdaQueryWrapper<>();
+        List<User> list = userMapper.getAllByGroup(wrapper.between(User::getAge,20,24).groupBy(User::getAge));
+        System.out.println(list);
+    }
+
+    //分页
+    public void userPage(){
+        LambdaQueryWrapper<User> wrapper = new LambdaQueryWrapper<>();
+        Page<User> page = new Page<>(1,1);
+        page.setCurrent(2);
+        List<User> list = userMapper.selectUserPage(page,wrapper.eq(User::getAge,20));
+        System.out.println(list);
+    }
 }
