@@ -3,6 +3,7 @@ package com.springboot.demo.test;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.springboot.demo.entity.ShipmentDetail;
 import com.springboot.demo.mapper.ShipmentDetailMapper;
+import com.springboot.demo.service.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +13,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 @RunWith(SpringRunner.class)
 public class Test1 {
+    @Autowired
+    UserService userService;
     @Autowired
     ShipmentDetailMapper mapper;
 
@@ -24,5 +27,10 @@ public class Test1 {
         String shipmentDetail = mapper.getItemCodeByItemCode(wrapper.eq(ShipmentDetail::getItemCode,"NRHF04CP929360"));
 //        ShipmentDetail shipmentDetail = mapper.selectOne(wrapper.select(ShipmentDetail::getId,ShipmentDetail::getItemCode).eq(ShipmentDetail::getId,5));
         System.out.println(shipmentDetail);
+    }
+
+    @Test
+    public void test2(){
+        userService.getUsersetVersion(1);
     }
 }

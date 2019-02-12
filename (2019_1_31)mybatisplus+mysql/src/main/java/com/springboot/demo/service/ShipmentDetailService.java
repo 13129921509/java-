@@ -11,7 +11,6 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 @Service
 public class ShipmentDetailService {
-    public AtomicBoolean version = new AtomicBoolean(false);
     @Autowired
     ShipmentDetailMapper mapper;
 
@@ -24,9 +23,4 @@ public class ShipmentDetailService {
         return shipmentDetail;
     }
 
-
-    public void getUsersetVersion(){
-        boolean status = version.weakCompareAndSet(false,true);
-        System.out.println(Thread.currentThread().getName()+"成功获得锁");
-    }
 }

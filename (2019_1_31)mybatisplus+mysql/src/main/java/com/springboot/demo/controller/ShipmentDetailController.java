@@ -23,6 +23,6 @@ public class ShipmentDetailController {
 
 //    @GetMapping(value = "enter/{id}")
 //    public User entry(@PathVariable("id") String id){
-////        service.
+//        service.
 //    }
 }
