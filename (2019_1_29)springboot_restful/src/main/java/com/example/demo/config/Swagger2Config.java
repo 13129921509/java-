@@ -32,4 +32,8 @@ public class Swagger2Config {
                 .version("1.0")
                 .build();
     }
+
+    public void get(){
+
+    }
 }
