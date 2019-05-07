@@ -3,6 +3,7 @@ package com.school.springbootandmybatis.mapper;
 import com.school.springbootandmybatis.entity.Student;
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 @Mapper
 public interface StudentMapper{

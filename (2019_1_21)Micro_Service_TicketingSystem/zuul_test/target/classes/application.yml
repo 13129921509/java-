@@ -1,0 +1,40 @@
+
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:9002/eureka/
+    healthcheck:
+      enabled: true
+server:
+  port: 9006
+management:
+  security:
+    enabled: false
+spring:
+  application:
+    name: api-geteway
+  profiles:
+    active: 1
+
+zuul:
+  routes:
+    getEurekaHealth.path: /getEurekaHealth/**
+    getEurekaHealth.url: http://localhost:9002/
+    getEureka.path: /getEureka/**
+    getEureka.url: http://localhost:9005/getEureka/
+#  ignored-services: '*'
+#  prefix: /api
+#  routes:
+    users:
+      path: /users/**
+      serviceId: USER-REGISTER-SERVER
+ribbon:
+  ReadTimeOut: 3000
+  ConnectTimeout: 3000
+#  eureka:
+#    enabled: true

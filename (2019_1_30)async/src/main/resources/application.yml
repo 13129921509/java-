@@ -1,0 +1,7 @@
+spring:
+  redis:
+    database: 1
+    jedis:
+      pool:
+        max-active: 10
+        max-wait: 50ms

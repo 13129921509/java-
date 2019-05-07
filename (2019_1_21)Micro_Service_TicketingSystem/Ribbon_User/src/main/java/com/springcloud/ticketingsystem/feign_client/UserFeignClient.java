@@ -1,6 +1,7 @@
 package com.springcloud.ticketingsystem.feign_client;
 
 import com.springcloud.ticketingsystem.entity.User;
+import feign.RequestLine;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,6 +17,7 @@ public interface UserFeignClient {
             value = "{service}",
             consumes = "application/json"
     )
+    @RequestLine("GET {service}")
     String StringService(@PathVariable("service") String service);
 //
 //    @RequestMapping(

@@ -1,0 +1,23 @@
+spring:
+  jpa:
+      database: mysql
+      show-sql: true
+      hibernate:
+        ddl-auto: update
+        naming:
+          strategy: org.hibernate.cfg.ImprovedNamingStrategy
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.MySQL5Dialect
+  datasource:
+    primarydatasource:
+      url: jdbc:mysql://localhost:3306/test?characterEncoding=UTF-8
+      username: root
+      password: 123
+      driver-class-name: com.mysql.jdbc.Driver
+
+    seconddatasource:
+      url: jdbc:mysql://118.178.95.119:33306/mysql?autoReconnect=true&failOverReadOnly=false&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+      username: root
+      password: ttx2011
+      driverClassName: com.mysql.jdbc.Driver

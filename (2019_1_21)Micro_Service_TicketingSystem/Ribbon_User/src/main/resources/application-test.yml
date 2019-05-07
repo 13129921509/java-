@@ -1,0 +1,44 @@
+
+server:
+  port: 9006
+spring:
+  application:
+    name: ribbon-user-server
+  cloud:
+    loadbalancer:
+      retry:
+        enabled: true
+#  profiles:
+#    active: test
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl.defaultZone: http://localhost:9002/eureka/
+    healthcheck:
+      enabled: true
+user-register-server:
+  ribbon:
+    ConnectTimeout: 250
+#    NFLoadBalancerPingClassName : com.netfile.loadbalancer.PingUrl
+    ReadTimeout: 1000
+    OkToRetryOnAllOperations: true
+    MaxAutoRetriesNextServer: 2
+    MaxAutoRetries: 5
+#ribbon.ConnectTimeout=250
+ribbon:
+  ConnectTimeout: 250
+
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMillisseconds: 10000
+
+
+#加入没有服务治理（Eureka），那么可以使用以下属性指明需要负载均衡的端口
+#user-register-server.ribbon.listOfServers=localhost:8080,localhost:8081,localhost:8082
+

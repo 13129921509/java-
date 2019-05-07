@@ -26,6 +26,7 @@ public class HelloReceiver {
     public void process2(User user){
         System.out.println(user.toString());
     }
+
     @RequestMapping("/hello")
     public String hello(){
         return String.valueOf(atomicInteger);

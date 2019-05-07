@@ -1,0 +1,57 @@
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:9002/eureka/
+    healthcheck:
+      enabled: true
+server:
+  port: 9006
+management:
+  security:
+    enabled: false
+spring:
+  application:
+    name: api-geteway
+
+zuul:
+  routes:
+    api-get:
+      path: /api-get/**
+      serviceId: api-get
+    message:
+      path: /message/**
+      serviceId: message
+#    getEurekaHealth.path: /getEurekaHealth/**
+#    getEurekaHealth.url: http://localhost:9002/
+#    getEureka.path: /getEureka/**
+#    getEureka.url: http://localhost:9005/getEureka/
+#  ignored-services: '*'
+#  prefix: /api
+#  routes:
+#    users:
+#      path: /users/**
+#      serviceId: USER-REGISTER-SERVER
+ribbon:
+  ReadTimeOut: 3000
+  ConnectTimeout: 3000
+  eureka:
+    enabled: false
+
+api-get:
+  ribbon:
+    listOfServers: http://localhost:9002/
+
+message:
+  ribbon:
+    listOfServers: http://localhost:9010/ #这里不能输入服务名 user-register-server
+hystrix:
+  command:
+    message: #服务名称
+      execution:
+        isolation:
+          thread:
+            timeoutInMiliseconds: 5000

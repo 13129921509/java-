@@ -1,0 +1,32 @@
+server:
+  port: 9004
+spring:
+  application:
+    name: Rabbit_SentEmail
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+  datasource:
+    password: 123
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/test?characterEncoding=utf8&serverTimezone=UTC
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  mail:
+    host: smtp.qq.com
+    username: 942445346@qq.com
+    password: wpjjkqivxknfbbbb
+    default-encoding: UTF-8
+    properties:
+      mail:
+        auth: true
+        starttls:
+          enable: true
+          required: true

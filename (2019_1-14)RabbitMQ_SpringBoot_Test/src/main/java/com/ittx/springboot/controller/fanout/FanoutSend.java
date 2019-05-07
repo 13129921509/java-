@@ -9,6 +9,6 @@ public class FanoutSend {
     @Autowired
     AmqpTemplate rabbitTemplate;
     public void send(){
-        rabbitTemplate.convertAndSend("fanoutExchange","111","all ting!!!");
+        rabbitTemplate.convertAndSend("fanoutExchange","","all ting!!!");
     }
 }

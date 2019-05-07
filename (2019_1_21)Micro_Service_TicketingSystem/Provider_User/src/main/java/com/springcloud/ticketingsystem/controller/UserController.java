@@ -22,6 +22,7 @@ import java.util.Map;
 public class UserController{
     Logger logger = Logger.getLogger(UserController.class);
     @Qualifier("eurekaClient")
+    @Autowired
     EurekaClient eurekaClient;
     @Autowired
     DiscoveryClient client;
@@ -41,7 +42,8 @@ public class UserController{
     }
 
     @RequestMapping(value = "/message",method = RequestMethod.GET)
-    public String getMessage(){
+    public String getMessage() throws InterruptedException {
+//        Thread.sleep(2000);
         User user = new User("蔡子文","22");
         return user.toString();
     }

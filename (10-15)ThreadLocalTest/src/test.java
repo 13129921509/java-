@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 /*
- * 测试：该类实现不同的线程拿到它，都是互不共享的，且对每个线程来说都是只能实例化一次
+ * ??????????????????????????????????????????????????????????????????
  */
 public class test {
 	
@@ -15,17 +15,17 @@ class StringHandler extends ThreadLocal<String>{
 	private static Map<Object, String> threadMap = new HashMap<Object, String>();
 	private static Map<Object, Integer> logThreadMap = new HashMap<Object, Integer>();
 	public StringHandler() throws InstantiationException, IllegalAccessException {
-		// TODO 自动生成的构造函数存根
+		// TODO ????????????????
 		if(!isJuddge()){
 			stringHandlers.add(currentThreadName);
 		}
 	}
 	/*
-	 * 有没有当前线程对象
+	 * ????械????????
 	 */
 	public Boolean isJuddge(){
 		if(threadMap.get(Thread.currentThread().getName())== null){
-			threadMap.put(Thread.currentThread().getName(), Thread.currentThread().getName()+"已经有Session对象了，我是对象1");
+			threadMap.put(Thread.currentThread().getName(), Thread.currentThread().getName()+"?????Session??????????????1");
 			logThreadMap.put(Thread.currentThread().getName(), 1);
 			return false;
 		}else{
@@ -39,7 +39,7 @@ class StringHandler extends ThreadLocal<String>{
 	}
 	@Override
 	protected String initialValue() {
-		// TODO 自动生成的方法存根
+		// TODO ??????????????
 		return threadMap.get(Thread.currentThread().getName());
 	}
 	
@@ -54,7 +54,7 @@ class StringHandler extends ThreadLocal<String>{
 			
 			@Override
 			public void run() {
-				// TODO 自动生成的方法存根
+				// TODO ??????????????
 				StringHandler stringHandler6;
 				try {
 					stringHandler6 = new StringHandler();
@@ -64,10 +64,10 @@ class StringHandler extends ThreadLocal<String>{
 					stringHandler6 = new StringHandler();
 					stringHandler6.getLogPleaseTime();
 				} catch (InstantiationException e) {
-					// TODO 自动生成的 catch 块
+					// TODO ???????? catch ??
 					e.printStackTrace();
 				} catch (IllegalAccessException e) {
-					// TODO 自动生成的 catch 块
+					// TODO ???????? catch ??
 					e.printStackTrace();
 				}
 				
